@@ -1,0 +1,36 @@
+---
+- name: Restart elasticsearch
+  service:
+    name=elasticsearch
+    enabled=yes state=restarted
+  sudo: yes
+
+- name: Restart logstash
+  service:
+    name=logstash
+    enabled=yes state=restarted
+  sudo: yes
+
+- name: Restart monit
+  service:
+    name=monit
+    enabled=yes state=restarted
+  sudo: yes
+
+- name: Restart nginx
+  service:
+    name=nginx
+    enabled=yes state=restarted
+  sudo: yes
+
+- name: Restart supervisor
+  service:
+    name=supervisor
+    enabled=yes state=restarted
+  sudo: yes
+
+- name: Restart kibana
+  supervisorctl:
+    name=kibana
+    state=restarted
+  sudo: yes
