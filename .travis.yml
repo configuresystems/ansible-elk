@@ -14,12 +14,12 @@ install:
   - pip install ansible
 
   # Add ansible.cfg to pick up roles path.
-  - printf '[defaults]\nroles_path = ../../' > ansible.cfg
+  - printf '[defaults]\nroles_path = ../' > ansible.cfg
 
 script:
   # Check the role/playbook's syntax.
 
-  - echo $SITE
+  - pwd
 
   - ansible-playbook -i roles/elk/tests/inventory roles/elk/tests/$SITE --syntax-check
 
