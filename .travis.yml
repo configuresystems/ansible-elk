@@ -19,7 +19,7 @@ install:
 script:
   # Check the role/playbook's syntax.
 
-  - pwd
+  - echo $SITE
 
   - ansible-playbook -i roles/elk/tests/inventory roles/elk/tests/$SITE --syntax-check
 
