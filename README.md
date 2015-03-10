@@ -1,6 +1,6 @@
 # Ansible Role: Elasticsearch ELK stack
 
-[![Build Status](https://travis-ci.org/bakhti/ansible-elk.svg?branch=master)](https://travis-ci.org/bakhti/ansible-elk) [![Ansible Galaxy](http://img.shields.io/badge/galaxy-bakhti.elk-660198.svg)](https://galaxy.ansible.com/list#/roles/1243)
+[![Build Status](https://travis-ci.org/configuresystems/ansible-elk.svg?branch=kibana3)](https://travis-ci.org/configuresystems/ansible-elk)
 
 Setup [Elasticsearch ELK Stack](http://www.elasticsearch.org/overview/) on Debian/Ubuntu linux servers.
 
